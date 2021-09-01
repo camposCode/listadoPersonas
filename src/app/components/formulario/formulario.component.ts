@@ -11,9 +11,6 @@ export class FormularioComponent{
   @Output() personaCreada = new EventEmitter<Persona>();
 
 
-  /* nombreInput: string = '';
-  apellidoInput: string = ''; */
-
   agregarPersona(nombreInput: HTMLInputElement, apellidoInput: HTMLInputElement){
     let persona1 = new Persona(nombreInput.value, apellidoInput.value);
     this.personaCreada.emit(persona1);

@@ -6,6 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { PersonaComponent } from './components/persona/persona.component';
 import { FormularioComponent } from './components/formulario/formulario.component';
+import { LoggingServiceService } from './services/logging-service.service';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,9 @@ import { FormularioComponent } from './components/formulario/formulario.componen
     BrowserAnimationsModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    LoggingServiceService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
